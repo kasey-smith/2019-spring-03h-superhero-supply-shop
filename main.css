@@ -12,15 +12,22 @@ Use flexbox to:
 
 
 /*You don't need to change this unless you want to*/
+html{
+  background: white;
+}
 body {
     background: yellow;
-    margin: 0;
+    margin: auto;
     padding: 0;
+    width: 50%;
 }
 #nav{
     list-style: none;
     background: darkblue;
     margin-top: 0px;
+    display: flex;
+	  flex-direction: row;
+	  align-items: center;
 }
 
 #nav li{
@@ -46,13 +53,23 @@ h1, h2 {
 
 #gallery {
     background: red;
+    display: flex;
+	  align-items: center;
+    justify-content: center;
 }
 
 .gallery-item{
     width: 510px;
 }
+#sub-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-.sub-section img {
+#sub-section img {
     margin: 10px;
     border: darkblue solid 3px;
 }
